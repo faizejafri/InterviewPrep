@@ -7,12 +7,14 @@ public class ReverseEachWordInSentence {
 
     public static void main(String[] args) {
         String sentence = "My name is faize jafri";
-
+        String reverseWord = "";
         String[] words = sentence.split(" ");
 
         for (String word : words) {
-            String reversedWord = new StringBuilder(word).reverse().toString();
-            System.out.print(reversedWord + " ");
+            reverseWord = new StringBuilder(word).reverse().toString();
+            System.out.print(reverseWord + " ");
         }
+
+
     }
 }
